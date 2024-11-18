@@ -33,3 +33,7 @@ h3{
     font-size: 14px;
 }
 
+.dog-breed-item{
+    display: flex;
+    justify-content: space-between;
+}

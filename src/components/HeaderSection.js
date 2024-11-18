@@ -1,0 +1,18 @@
+import React from 'react'
+import '../css/HeaderSection.css'
+
+const HeaderSection = () => {
+  return (
+    <section>
+        <h1>Dog breed database</h1>
+        <p> Venture into the fascinating world of dog breeds.
+            Discover their unique characteristics, origins and care
+            needs in our comprehensive guide. Whether a
+            seasoned dog lover or in search of your perfect furry
+            friend - find all the answers here!
+        </p>
+    </section>
+  )
+}
+
+export default HeaderSection

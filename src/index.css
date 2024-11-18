@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Gotham'; 
+  src: url('./fonts/GothamBook.ttf') format('truetype'); 
+}
+
+body{
+  background-color: #F2F5F8;
+  color: #024781;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Gotham', sans-serif;
+}
+

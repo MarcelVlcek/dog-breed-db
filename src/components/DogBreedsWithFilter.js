@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react'
-import '../css/DogBreed.css'
+import '../css/DogBreedsWithFIlter.css'
 
-const DogBreeds = () => {
+const DogBreedsWithFilter = () => {
+
+  const [searchingText, setSearchingText] = useState("")
+
   const url = "https://api.thedogapi.com/v1/breeds"
   
   const [dogBreeds, setDogBreeds] = useState([])  
@@ -30,12 +33,17 @@ const DogBreeds = () => {
 
   return (
     <div>
-      
+       <form>
+        <label htmlFor='searchInput'>Filter by breed name</label>
+        <input id='searchInput' type="text" placeholder='Breed name' onChange={
+          (e) => setSearchingText(e.target.value)
+        } />
+    </form>
       {dogBreeds.map((breed, index) => (
-        <p className="dog-breed-item" key={index}>{breed.name}<button>show more</button></p>  
+        <p className="dog-breed-item" key={index}><strong>{breed.name}</strong><button>show more</button></p>  
       ))}
     </div>
   )
 }
 
-export default DogBreeds
+export default DogBreedsWithFilter

@@ -1,13 +1,11 @@
 import React from 'react'
 import HeaderSection from './components/HeaderSection'
-import FilterByName from './components/FilterByName'
-import DogBreeds from './components/DogBreeds'
+import DogBreedsWithFilter from './components/DogBreedsWithFilter'
 
 const App = () => {
   return (<>
     <HeaderSection></HeaderSection>
-    <FilterByName></FilterByName>
-    <DogBreeds></DogBreeds>
+    <DogBreedsWithFilter></DogBreedsWithFilter>
   
   </>
     
